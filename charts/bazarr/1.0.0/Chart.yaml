@@ -1,0 +1,26 @@
+name: bazarr
+description: Bazarr is a PVR for Usenet and BitTorrent users.
+annotations:
+  title: Bazarr
+type: application
+version: 1.0.0
+apiVersion: v2
+appVersion: 'develop-version-4.0.0.545'
+kubeVersion: '>=1.16.0-0'
+maintainers:
+  - name: truenas
+    url: https://www.truenas.com/
+    email: dev@ixsystems.com
+dependencies:
+  - name: common
+    repository: file://../../../common
+    version: 1.0.0
+home: https://github.com/Bazarr/Bazarr
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/bazarr.png
+sources:
+  - https://github.com/onedr0p/containers/tree/main/apps/bazarr
+  - https://github.com/truenas/charts/tree/master/community/bazarr
+  - https://github.com/Bazarr/Bazarr
+keywords:
+  - media
+  - series

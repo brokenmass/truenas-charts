@@ -1,276 +1,282 @@
 {
-    "charts": {
-        "jellyfin": {
-            "app_readme": "<h1>Jellyfin</h1>\n<p><a href=\"https://jellyfin.org/\">Jellyfin</a> is a Free Software Media System that puts you in control of managing and streaming your media.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Jellyfin</code> directories.\nAfterward, the <code>Jellyfin</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "media",
-                "streaming"
-            ],
-            "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://jellyfin.org/",
-            "location": "/__w/truenas-charts/truenas-charts/charts/jellyfin",
-            "latest_version": "1.0.7",
-            "latest_app_version": "10.8.10",
-            "latest_human_version": "10.8.10_1.0.7",
-            "last_update": "2023-06-26 00:09:53",
-            "name": "jellyfin",
-            "recommended": false,
-            "title": "Jellyfin",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [],
-            "screenshots": [],
-            "sources": [
-                "https://hub.docker.com/r/jellyfin/jellyfin",
-                "https://github.com/truenas/charts/tree/master/community/jellyfin",
-                "https://jellyfin.org/"
-            ],
-            "icon_url": "https://jellyfin.org/images/logo.svg"
-        },
-        "qbittorrent": {
-            "app_readme": "<h1>qBittorrent</h1>\n<p>The <a href=\"https://www.qbittorrent.org/\">qBittorrent</a> project aims to provide an open-source software alternative to \u00b5Torrent.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the qBittorrent directories.\nAfterward, the <code>qBittorrent</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).</p>\n</blockquote>",
-            "categories": [
-                "media",
-                "torrent",
-                "download"
-            ],
-            "description": "The qBittorrent project aims to provide an open-source software alternative to \u00b5Torrent.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://www.qbittorrent.org/",
-            "location": "/__w/truenas-charts/truenas-charts/charts/qbittorrent",
-            "latest_version": "1.0.15",
-            "latest_app_version": "4.5.4",
-            "latest_human_version": "4.5.4_1.0.15",
-            "last_update": "2023-06-26 00:09:53",
-            "name": "qbittorrent",
-            "recommended": false,
-            "title": "qBittorrent",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [],
-            "screenshots": [],
-            "sources": [
-                "https://github.com/onedr0p/containers/tree/main/apps/qbittorrent",
-                "https://github.com/truenas/charts/tree/master/community/qbittorrent",
-                "https://www.qbittorrent.org/"
-            ],
-            "icon_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Qbittorrent_logo.png"
-        },
-        "lidarr": {
-            "app_readme": "<h1>Lidarr</h1>\n<p><a href=\"https://github.com/Lidarr/Lidarr\">Lidarr</a> is a music collection manager for Usenet and BitTorrent users.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Lidarr</code> directories.\nAfterward, the <code>Lidarr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "media",
-                "music"
-            ],
-            "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/Lidarr/Lidarr",
-            "location": "/__w/truenas-charts/truenas-charts/charts/lidarr",
-            "latest_version": "1.0.11",
-            "latest_app_version": "1.1.3.2982",
-            "latest_human_version": "1.1.3.2982_1.0.11",
-            "last_update": "2023-06-26 00:09:53",
-            "name": "lidarr",
-            "recommended": false,
-            "title": "Lidarr",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [],
-            "screenshots": [],
-            "sources": [
-                "https://github.com/onedr0p/containers/tree/main/apps/lidarr",
-                "https://github.com/truenas/charts/tree/master/charts/lidarr",
-                "https://github.com/Lidarr/Lidarr"
-            ],
-            "icon_url": "https://raw.githubusercontent.com/Lidarr/Lidarr/develop/Logo/256.png"
-        },
-        "jackett": {
-            "app_readme": "<h1>Jackett</h1>\n<p><a href=\"https://github.com/Jackett/Jackett\">Jackett</a> is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Jackett</code> directories.\nAfterward, the <code>Jackett</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "media",
-                "series"
-            ],
-            "description": "Jackett is a PVR for Usenet and BitTorrent users.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/Jackett/Jackett",
-            "location": "/__w/truenas-charts/truenas-charts/charts/jackett",
-            "latest_version": "1.0.12",
-            "latest_app_version": "3.0.10.1567",
-            "latest_human_version": "3.0.10.1567_1.0.12",
-            "last_update": "2023-06-26 00:09:53",
-            "name": "jackett",
-            "recommended": false,
-            "title": "Jackett",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [],
-            "screenshots": [],
-            "sources": [
-                "https://github.com/Jackett/Jackett"
-            ],
-            "icon_url": "https://raw.githubusercontent.com/Jackett/Jackett/develop/Logo/256.png"
-        },
-        "sonarr": {
-            "app_readme": "<h1>Sonarr</h1>\n<p><a href=\"https://github.com/Sonarr/Sonarr\">Sonarr</a> is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Sonarr</code> directories.\nAfterward, the <code>Sonarr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "media",
-                "series"
-            ],
-            "description": "Sonarr is a PVR for Usenet and BitTorrent users.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/Sonarr/Sonarr",
-            "location": "/__w/truenas-charts/truenas-charts/charts/sonarr",
-            "latest_version": "1.0.11",
-            "latest_app_version": "3.0.10.1567",
-            "latest_human_version": "3.0.10.1567_1.0.11",
-            "last_update": "2023-06-26 00:09:53",
-            "name": "sonarr",
-            "recommended": false,
-            "title": "Sonarr",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [],
-            "screenshots": [],
-            "sources": [
-                "https://github.com/onedr0p/containers/tree/main/apps/sonarr",
-                "https://github.com/truenas/charts/tree/master/community/sonarr",
-                "https://github.com/Sonarr/Sonarr"
-            ],
-            "icon_url": "https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/256.png"
-        },
-        "overseerr": {
-            "app_readme": "<h1>Overseerr</h1>\n<p><a href=\"https://github.com/sct/overseerr\">Overseerr</a> is a free and open source software application for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Plex!</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Overseerr</code> directories.\nAfterward, the <code>Overseerr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "media"
-            ],
-            "description": "Overseerr is a free and open source software application for managing requests for your media library.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/sct/overseerr",
-            "location": "/__w/truenas-charts/truenas-charts/charts/overseerr",
-            "latest_version": "1.0.7",
-            "latest_app_version": "1.33.0",
-            "latest_human_version": "1.33.0_1.0.7",
-            "last_update": "2023-06-26 00:09:53",
-            "name": "overseerr",
-            "recommended": false,
-            "title": "Overseerr",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [],
-            "screenshots": [],
-            "sources": [
-                "https://hub.docker.com/r/sctx/overseerr",
-                "https://github.com/truenas/charts/tree/master/community/overseer",
-                "https://github.com/sct/overseerr"
-            ],
-            "icon_url": "https://raw.githubusercontent.com/sct/overseerr/develop/public/os_icon.svg"
-        },
-        "nginx-proxy-manager": {
-            "app_readme": "<h1>Nginx Proxy Manager</h1>\n<p><a href=\"https://nginxproxymanager.com\">Nginx Proxy Manager</a> Expose your services easily and securely</p>\n<blockquote>\n<p>Application requires to run as root. This is a limitation of the application.</p>\n</blockquote>",
-            "categories": [
-                "nginx",
-                "proxy"
-            ],
-            "description": "Expose your services easily and securely",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://nginxproxymanager.com/",
-            "location": "/__w/truenas-charts/truenas-charts/charts/nginx-proxy-manager",
-            "latest_version": "1.0.10",
-            "latest_app_version": "2.10.3",
-            "latest_human_version": "2.10.3_1.0.10",
-            "last_update": "2023-06-26 00:09:53",
-            "name": "nginx-proxy-manager",
-            "recommended": false,
-            "title": "Nginx Proxy Manager",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [],
-            "screenshots": [],
-            "sources": [
-                "https://nginxproxymanager.com/",
-                "https://github.com/truenas/charts/tree/master/community/nginx-proxy-manager",
-                "https://hub.docker.com/r/jc21/nginx-proxy-manager"
-            ],
-            "icon_url": "https://nginxproxymanager.com/logo.png"
-        },
-        "radarr": {
-            "app_readme": "<h1>Radarr</h1>\n<p><a href=\"https://github.com/Radarr/Radarr\">Radarr</a> is a movie collection manager for Usenet and BitTorrent users.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Radarr</code> directories.\nAfterward, the <code>Radarr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
-            "categories": [
-                "media",
-                "movies"
-            ],
-            "description": "Radarr is a movie collection manager for Usenet and BitTorrent users.",
-            "healthy": true,
-            "healthy_error": null,
-            "home": "https://github.com/Radarr/Radarr",
-            "location": "/__w/truenas-charts/truenas-charts/charts/radarr",
-            "latest_version": "1.0.14",
-            "latest_app_version": "4.5.2.7388",
-            "latest_human_version": "4.5.2.7388_1.0.14",
-            "last_update": "2023-06-26 00:09:53",
-            "name": "radarr",
-            "recommended": false,
-            "title": "Radarr",
-            "maintainers": [
-                {
-                    "name": "truenas",
-                    "url": "https://www.truenas.com/",
-                    "email": "dev@ixsystems.com"
-                }
-            ],
-            "tags": [],
-            "screenshots": [],
-            "sources": [
-                "https://github.com/onedr0p/containers/tree/main/apps/radarr",
-                "https://github.com/truenas/charts/tree/master/community/radarr",
-                "https://github.com/Radarr/Radarr"
-            ],
-            "icon_url": "https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/256.png"
+  "charts": {
+    "jellyfin": {
+      "app_readme": "<h1>Jellyfin</h1>\n<p><a href=\"https://jellyfin.org/\">Jellyfin</a> is a Free Software Media System that puts you in control of managing and streaming your media.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Jellyfin</code> directories.\nAfterward, the <code>Jellyfin</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
+      "categories": [
+        "media",
+        "streaming"
+      ],
+      "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media.",
+      "healthy": true,
+      "healthy_error": null,
+      "home": "https://jellyfin.org/",
+      "location": "/__w/truenas-charts/truenas-charts/charts/jellyfin",
+      "latest_version": "1.0.7",
+      "latest_app_version": "10.8.10",
+      "latest_human_version": "10.8.10_1.0.7",
+      "last_update": "2023-06-27 11:05:00",
+      "name": "jellyfin",
+      "recommended": false,
+      "title": "Jellyfin",
+      "maintainers": [
+        {
+          "name": "truenas",
+          "url": "https://www.truenas.com/",
+          "email": "dev@ixsystems.com"
         }
+      ],
+      "tags": [],
+      "screenshots": [],
+      "sources": [
+        "https://hub.docker.com/r/jellyfin/jellyfin",
+        "https://github.com/truenas/charts/tree/master/community/jellyfin",
+        "https://jellyfin.org/"
+      ],
+      "icon_url": "https://jellyfin.org/images/logo.svg"
     },
-    "test": {},
-    "community": {}
+    "qbittorrent": {
+      "app_readme": "<h1>qBittorrent</h1>\n<p>The <a href=\"https://www.qbittorrent.org/\">qBittorrent</a> project aims to provide an open-source software alternative to µTorrent.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the qBittorrent directories.\nAfterward, the <code>qBittorrent</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).</p>\n</blockquote>",
+      "categories": [
+        "media",
+        "torrent",
+        "download"
+      ],
+      "description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent.",
+      "healthy": true,
+      "healthy_error": null,
+      "home": "https://www.qbittorrent.org/",
+      "location": "/__w/truenas-charts/truenas-charts/charts/qbittorrent",
+      "latest_version": "1.0.0",
+      "latest_app_version": "version-4.5.4-r0",
+      "latest_human_version": "version-4.5.4-r0_1.0.0",
+      "last_update": "2023-06-27 11:05:00",
+      "name": "qbittorrent",
+      "recommended": false,
+      "title": "qBittorrent",
+      "maintainers": [
+        {
+          "name": "truenas",
+          "url": "https://www.truenas.com/",
+          "email": "dev@ixsystems.com"
+        }
+      ],
+      "tags": [],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/onedr0p/containers/tree/main/apps/qbittorrent",
+        "https://github.com/truenas/charts/tree/master/community/qbittorrent",
+        "https://www.qbittorrent.org/"
+      ],
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Qbittorrent_logo.png"
+    },
+    "lidarr": {
+      "app_readme": "<h1>Lidarr</h1>\n<p><a href=\"https://github.com/Lidarr/Lidarr\">Lidarr</a> is a music collection manager for Usenet and BitTorrent users.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Lidarr</code> directories.\nAfterward, the <code>Lidarr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
+      "categories": [
+        "media",
+        "music"
+      ],
+      "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
+      "healthy": true,
+      "healthy_error": null,
+      "home": "https://github.com/Lidarr/Lidarr",
+      "location": "/__w/truenas-charts/truenas-charts/charts/lidarr",
+      "latest_version": "1.0.11",
+      "latest_app_version": "1.1.3.2982",
+      "latest_human_version": "1.1.3.2982_1.0.11",
+      "last_update": "2023-06-27 11:05:00",
+      "name": "lidarr",
+      "recommended": false,
+      "title": "Lidarr",
+      "maintainers": [
+        {
+          "name": "truenas",
+          "url": "https://www.truenas.com/",
+          "email": "dev@ixsystems.com"
+        }
+      ],
+      "tags": [],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/onedr0p/containers/tree/main/apps/lidarr",
+        "https://github.com/truenas/charts/tree/master/charts/lidarr",
+        "https://github.com/Lidarr/Lidarr"
+      ],
+      "icon_url": "https://raw.githubusercontent.com/Lidarr/Lidarr/develop/Logo/256.png"
+    },
+    "jackett": {
+      "app_readme": "<h1>Jackett</h1>\n<p><a href=\"https://github.com/Jackett/Jackett\">Jackett</a> is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Jackett</code> directories.\nAfterward, the <code>Jackett</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
+      "categories": [
+        "media",
+        "series"
+      ],
+      "description": "Jackett is a PVR for Usenet and BitTorrent users.",
+      "healthy": true,
+      "healthy_error": null,
+      "home": "https://github.com/Jackett/Jackett",
+      "location": "/__w/truenas-charts/truenas-charts/charts/jackett",
+      "latest_version": "1.0.0",
+      "latest_app_version": "version-v0.21.327",
+      "latest_human_version": "version-v0.21.327_1.0.0",
+      "last_update": "2023-06-27 11:05:00",
+      "name": "jackett",
+      "recommended": false,
+      "title": "Jackett",
+      "maintainers": [
+        {
+          "name": "truenas",
+          "url": "https://www.truenas.com/",
+          "email": "dev@ixsystems.com"
+        }
+      ],
+      "tags": [],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/Jackett/Jackett"
+      ],
+      "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/jackett.png"
+    },
+    "sonarr": {
+      "app_readme": "<h1>Sonarr</h1>\n<p><a href=\"https://github.com/Sonarr/Sonarr\">Sonarr</a> is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Sonarr</code> directories.\nAfterward, the <code>Sonarr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
+      "categories": [
+        "media",
+        "series"
+      ],
+      "description": "Sonarr is a PVR for Usenet and BitTorrent users.",
+      "healthy": true,
+      "healthy_error": null,
+      "home": "https://github.com/Sonarr/Sonarr",
+      "location": "/__w/truenas-charts/truenas-charts/charts/sonarr",
+      "latest_version": "1.0.1",
+      "latest_app_version": "develop-version-4.0.0.545",
+      "latest_human_version": "develop-version-4.0.0.545_1.0.1",
+      "last_update": "2023-06-27 11:05:00",
+      "name": "sonarr",
+      "recommended": false,
+      "title": "Sonarr",
+      "maintainers": [
+        {
+          "name": "truenas",
+          "url": "https://www.truenas.com/",
+          "email": "dev@ixsystems.com"
+        }
+      ],
+      "tags": [],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/onedr0p/containers/tree/main/apps/sonarr",
+        "https://github.com/truenas/charts/tree/master/community/sonarr",
+        "https://github.com/Sonarr/Sonarr"
+      ],
+      "icon_url": "https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/256.png"
+    },
+    "overseerr": {
+      "app_readme": "<h1>Overseerr</h1>\n<p><a href=\"https://github.com/sct/overseerr\">Overseerr</a> is a free and open source software application for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Plex!</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Overseerr</code> directories.\nAfterward, the <code>Overseerr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
+      "categories": [
+        "media"
+      ],
+      "description": "Overseerr is a free and open source software application for managing requests for your media library.",
+      "healthy": true,
+      "healthy_error": null,
+      "home": "https://github.com/sct/overseerr",
+      "location": "/__w/truenas-charts/truenas-charts/charts/overseerr",
+      "latest_version": "1.0.7",
+      "latest_app_version": "1.33.0",
+      "latest_human_version": "1.33.0_1.0.7",
+      "last_update": "2023-06-27 11:05:00",
+      "name": "overseerr",
+      "recommended": false,
+      "title": "Overseerr",
+      "maintainers": [
+        {
+          "name": "truenas",
+          "url": "https://www.truenas.com/",
+          "email": "dev@ixsystems.com"
+        }
+      ],
+      "tags": [],
+      "screenshots": [],
+      "sources": [
+        "https://hub.docker.com/r/sctx/overseerr",
+        "https://github.com/truenas/charts/tree/master/community/overseer",
+        "https://github.com/sct/overseerr"
+      ],
+      "icon_url": "https://raw.githubusercontent.com/sct/overseerr/develop/public/os_icon.svg"
+    },
+    "nginx-proxy-manager": {
+      "app_readme": "<h1>Nginx Proxy Manager</h1>\n<p><a href=\"https://nginxproxymanager.com\">Nginx Proxy Manager</a> Expose your services easily and securely</p>\n<blockquote>\n<p>Application requires to run as root. This is a limitation of the application.</p>\n</blockquote>",
+      "categories": [
+        "nginx",
+        "proxy"
+      ],
+      "description": "Expose your services easily and securely",
+      "healthy": true,
+      "healthy_error": null,
+      "home": "https://nginxproxymanager.com/",
+      "location": "/__w/truenas-charts/truenas-charts/charts/nginx-proxy-manager",
+      "latest_version": "1.0.10",
+      "latest_app_version": "2.10.3",
+      "latest_human_version": "2.10.3_1.0.10",
+      "last_update": "2023-06-27 11:05:00",
+      "name": "nginx-proxy-manager",
+      "recommended": false,
+      "title": "Nginx Proxy Manager",
+      "maintainers": [
+        {
+          "name": "truenas",
+          "url": "https://www.truenas.com/",
+          "email": "dev@ixsystems.com"
+        }
+      ],
+      "tags": [],
+      "screenshots": [],
+      "sources": [
+        "https://nginxproxymanager.com/",
+        "https://github.com/truenas/charts/tree/master/community/nginx-proxy-manager",
+        "https://hub.docker.com/r/jc21/nginx-proxy-manager"
+      ],
+      "icon_url": "https://nginxproxymanager.com/logo.png"
+    },
+    "radarr": {
+      "app_readme": "<h1>Radarr</h1>\n<p><a href=\"https://github.com/Radarr/Radarr\">Radarr</a> is a movie collection manager for Usenet and BitTorrent users.</p>\n<blockquote>\n<p>When application is installed, a container will be launched with <strong>root</strong> privileges.\nThis is required in order to apply the correct permissions to the <code>Radarr</code> directories.\nAfterward, the <code>Radarr</code> container will run as a <strong>non</strong>-root user (Default: <code>568</code>).\nAll mounted storage(s) will be <code>chown</code>ed only if the parent directory does not match the configured user.</p>\n</blockquote>",
+      "categories": [
+        "media",
+        "movies"
+      ],
+      "description": "Radarr is a movie collection manager for Usenet and BitTorrent users.",
+      "healthy": true,
+      "healthy_error": null,
+      "home": "https://github.com/Radarr/Radarr",
+      "location": "/__w/truenas-charts/truenas-charts/charts/radarr",
+      "latest_version": "1.0.0",
+      "latest_app_version": "version-4.5.2.7388",
+      "latest_human_version": "version-4.5.2.7388_1.0.0",
+      "last_update": "2023-06-27 11:05:00",
+      "name": "radarr",
+      "recommended": false,
+      "title": "Radarr",
+      "maintainers": [
+        {
+          "name": "truenas",
+          "url": "https://www.truenas.com/",
+          "email": "dev@ixsystems.com"
+        }
+      ],
+      "tags": [],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/onedr0p/containers/tree/main/apps/radarr",
+        "https://github.com/truenas/charts/tree/master/community/radarr",
+        "https://github.com/Radarr/Radarr"
+      ],
+      "icon_url": "https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/256.png"
+    },
+    "bazarr": {
+      "latest_version": "1.0.0",
+      "latest_human_version": "develop-version-4.0.0.545_1.0.0",
+      "latest_app_version": "develop-version-4.0.0.545",
+      "last_update": "2023-06-27 11:05:00"
+    }
+  },
+  "test": {},
+  "community": {}
 }

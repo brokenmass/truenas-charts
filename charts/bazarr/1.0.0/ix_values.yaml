@@ -1,0 +1,21 @@
+image:
+  repository: linuxserver/bazarr
+  pullPolicy: IfNotPresent
+  tag: 'develop-version-4.0.0.545'
+
+resources:
+  limits:
+    cpu: 4000m
+    memory: 8Gi
+
+bazarrConfig:
+  instanceName: Bazarr
+  additionalEnvs: []
+bazarrNetwork:
+  webPort: 30027
+  hostNetwork: false
+bazarrStorage:
+  config:
+    type: ixVolume
+    datasetName: config
+  additionalStorages: []

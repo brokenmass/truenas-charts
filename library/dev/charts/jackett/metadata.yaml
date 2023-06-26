@@ -1,0 +1,8 @@
+runAsContext:
+  - userName: jackett
+    groupName: jackett
+    gid: 568
+    uid: 568
+    description: Jackett can run as any non-root user.
+capabilities: []
+hostMounts: []

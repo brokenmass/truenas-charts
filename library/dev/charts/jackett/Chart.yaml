@@ -1,0 +1,24 @@
+name: jackett
+description: Jackett is a PVR for Usenet and BitTorrent users.
+annotations:
+  title: Jackett
+type: application
+version: 1.0.0
+apiVersion: v2
+appVersion: 'version-v0.21.327'
+kubeVersion: '>=1.16.0-0'
+maintainers:
+  - name: truenas
+    url: https://www.truenas.com/
+    email: dev@ixsystems.com
+dependencies:
+  - name: common
+    repository: file://../../../common
+    version: 1.0.0
+home: https://github.com/Jackett/Jackett
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/jackett.png
+sources:
+  - https://github.com/Jackett/Jackett
+keywords:
+  - media
+  - series

@@ -1,0 +1,21 @@
+image:
+  repository: linuxserver/jackett
+  pullPolicy: IfNotPresent
+  tag: 'version-v0.21.327'
+
+resources:
+  limits:
+    cpu: 4000m
+    memory: 8Gi
+
+jackettConfig:
+  instanceName: jackett
+  additionalEnvs: []
+jackettNetwork:
+  webPort: 30017
+  hostNetwork: false
+jackettStorage:
+  config:
+    type: ixVolume
+    datasetName: config
+  additionalStorages: []

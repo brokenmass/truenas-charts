@@ -1,0 +1,21 @@
+image:
+  repository: linuxserver/sonarr
+  pullPolicy: IfNotPresent
+  tag: 'develop-version-4.0.0.545'
+
+resources:
+  limits:
+    cpu: 4000m
+    memory: 8Gi
+
+sonarrConfig:
+  instanceName: Sonarr
+  additionalEnvs: []
+sonarrNetwork:
+  webPort: 30027
+  hostNetwork: false
+sonarrStorage:
+  config:
+    type: ixVolume
+    datasetName: config
+  additionalStorages: []

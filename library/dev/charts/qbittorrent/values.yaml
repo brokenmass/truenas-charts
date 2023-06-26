@@ -1,0 +1,29 @@
+image:
+  repository: linuxserver/qbittorrent
+  pullPolicy: IfNotPresent
+  tag: version-4.5.4-r0
+
+resources:
+  limits:
+    cpu: 4000m
+    memory: 8Gi
+
+qbitConfig:
+  additionalEnvs: []
+qbitNetwork:
+  webPort: 30024
+  btPort: 50413
+  hostNetwork: false
+qbitStorage:
+  downloads:
+    type: ixVolume
+    datasetName: downloads
+  config:
+    type: ixVolume
+    datasetName: config
+
+notes:
+  custom: |
+    Default credentials:
+    -  username: admin
+    -  password: adminadmin
