@@ -50,10 +50,10 @@ postgresImage:
 securityContext:
   container:
     PUID: 568
-    UMASK: "002"
-    runAsNonRoot: true
-    runAsUser: 568
-    runAsGroup: 568
+    UMASK: "022"
+    runAsNonRoot: false
+    runAsUser: 0
+    runAsGroup: 0
     readOnlyRootFilesystem: true
     allowPrivilegeEscalation: false
     privileged: false

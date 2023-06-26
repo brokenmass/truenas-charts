@@ -3,7 +3,7 @@
 VERSION="v4.31.1"
 BINARY="yq_linux_amd64"
 YQ_PATH="$(pwd)/yq"
-BASE_PATH="library/ix-dev"
+BASE_PATH="library/dev"
 
 if [[ ! -f "$YQ_PATH" ]]; then
     echo "Downloading yq..."

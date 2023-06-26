@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  ix-dev-validate:
+  dev-validate:
     runs-on: ubuntu-latest
 
     container:

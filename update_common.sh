@@ -3,7 +3,7 @@
 VERSION="v4.31.1"
 BINARY="yq_linux_amd64"
 YQ_PATH="$(pwd)/yq"
-BASE_PATH="library/ix-dev"
+BASE_PATH="library/dev"
 
 if [[ ! -d "$BASE_PATH" ]]; then
     echo "Error: [$BASE_PATH] does not exist"
@@ -20,7 +20,7 @@ fi
 REPO="file://../../../common"
 LATEST_COMMON_VERSION=$("$YQ_PATH" '.version' library/common/Chart.yaml)
 
-trains=("charts" "community" "enterprise")
+trains=("charts")
 
 for train in "${trains[@]}"; do
     echo "🚂 Checking [$train]..."

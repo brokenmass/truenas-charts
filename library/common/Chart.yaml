@@ -1,8 +1,8 @@
 apiVersion: v2
 name: common
-description: A library chart for iX Official Catalog
+description: A library chart for brokenmass Catalog
 type: library
-version: 1.0.8
+version: 1.0.0
 appVersion: v1
 annotations:
   title: Common Library Chart
